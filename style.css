@@ -31,6 +31,7 @@ img {
   border-radius: 50%;
   transition: 0.3s ease-in-out;
 }
+
 img:hover {
   border: 6px solid #062132;
   box-sizing: border-box;
@@ -41,7 +42,7 @@ img:hover {
 .comp_choice {
   display: flex;
   gap: 3rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
   text-align: center;
 }
 
@@ -72,10 +73,35 @@ img:hover {
   font-size: 2rem;
 }
 
+#reset {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  
+}
+
+#resetbtn {
+  display: inline-block;
+  padding: 1rem;
+  background: #062132;
+  color: beige;
+  border-radius: 1rem;
+  font-size: 1rem;
+  transform: 0.3s ease-in-out;
+}
+
+#resetbtn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  border: 2px solid #062132;
+  background-color: beige;
+  color: #062132;
+}
+
 .msg-container {
   display: flex;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .msg {
@@ -92,7 +118,7 @@ img:hover {
   color: #fff;
   text-align: center;
   padding: 12px 0;
-  position: fixed; /* stick to bottom */
+  position: fixed;
   bottom: 0;
   width: 100%;
   font-size: 14px;

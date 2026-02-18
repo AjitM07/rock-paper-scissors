@@ -6,6 +6,7 @@ let user_score = document.querySelector("#userscore");
 let comp_score = document.querySelector("#compscore");
 let comp_decision = document.querySelector("#comp_decision");
 let msg = document.querySelector(".msg");
+let reset = document.querySelector("#resetbtn");
 
 const genCompChoice = () => {
   let choices = ["rock", "paper", "scissors"];
@@ -25,6 +26,11 @@ const showWinner = (userWin, userChoice, compChoice) => {
   }
 };
 
+const resetScore = () => {
+  userScore = 0;
+  compScore = 0;
+};
+
 const updateScore = (userWin) => {
   if (userWin) {
     userScore++;
@@ -37,8 +43,6 @@ const updateScore = (userWin) => {
 
 const playGame = (userChoice) => {
   const compChoice = genCompChoice();
-  console.log("userchoice is : ", userChoice);
-  console.log("compChoice is : ", compChoice);
 
   if (userChoice === compChoice) {
     drawGame();
@@ -56,6 +60,12 @@ const playGame = (userChoice) => {
     updateScore(userWin);
   }
   comp_decision.innerText = `Computer chooses ${compChoice.toUpperCase()}`;
+
+  reset.addEventListener("click", () => {
+    resetScore();
+    user_score.innerText = userScore;
+    comp_score.innerText = compScore;
+  });
 };
 
 choices.forEach((choice) => {
