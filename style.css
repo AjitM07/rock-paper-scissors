@@ -1,0 +1,99 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: beige;
+}
+.heading {
+  background-color: #062132;
+  color: beige;
+  height: 6rem;
+  line-height: 6rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.choices {
+  display: flex;
+  gap: 4rem;
+  margin-top: 5rem;
+}
+
+img {
+  height: 15rem;
+  gap: 2rem;
+  background-color: #062132;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+}
+img:hover {
+  border: 6px solid #062132;
+  box-sizing: border-box;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.comp_choice {
+  display: flex;
+  gap: 3rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+#comp_decision {
+  display: inline-block;
+  padding: 1rem;
+  border: 3px solid #062132;
+  color: #062132;
+  border-radius: 1rem;
+  font-size: 2rem;
+}
+
+.scores {
+  display: flex;
+  gap: 3rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+#userscore,
+#compscore {
+  font-size: 5rem;
+  color: #062132;
+}
+
+#userscore-para,
+#compscore-para {
+  font-size: 2rem;
+}
+
+.msg-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.msg {
+  display: inline-block;
+  padding: 2rem;
+  background: #062132;
+  color: beige;
+  border-radius: 1rem;
+  font-size: 2rem;
+}
+
+.footer {
+  background-color: #062132;
+  color: #fff;
+  text-align: center;
+  padding: 12px 0;
+  position: fixed; /* stick to bottom */
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+}
